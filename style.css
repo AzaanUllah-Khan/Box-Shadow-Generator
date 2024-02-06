@@ -24,7 +24,7 @@ nav h1{
 aside{
     background-color: white;
     border-top: 3px solid rgb(246, 245, 245);
-    width: 350px;
+    width: 30%;
     height: 92vh;
     overflow-y: auto;
 }
@@ -89,4 +89,16 @@ aside .div .color{
 aside .div .color input{
     outline: none;
     border: 1px solid #ccc;
+}
+main{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .test{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(65, 145, 225);
+    border: 5px solid rgb(36, 80, 224);
 }
