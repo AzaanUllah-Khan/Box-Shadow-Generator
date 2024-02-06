@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: rgb(246, 245, 245);
+}
+nav{
+    background-color: white;
+    padding: 10px;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+nav h1{
+    font-size: 24px;
+    font-weight: 500;
+}
+aside{
+    background-color: white;
+    border-top: 3px solid rgb(246, 245, 245);
+    width: 350px;
+    height: 92vh;
+    overflow-y: auto;
+}
+aside::-webkit-scrollbar{
+    width: 0px;
+}
+aside header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+aside .div{
+    margin: 10px 7px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+aside .div .div-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+aside .div .div-header h1{
+    font-size: 18px;
+    color: #555;
+    font-weight: normal;
+}
+aside .div .div-header h3{
+    font-size: 14px;
+    color: royalblue;
+    font-weight: bold;
+}
+aside .div .range{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside .div .range input{
+    width: 90%;
+}
+aside .div .color{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    justify-content: flex-end;
+    width: fit-content;
+    align-self: flex-end;
+}
+aside .div .color input{
+    outline: none;
+    border: 1px solid #ccc;
+}
