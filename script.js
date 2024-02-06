@@ -26,14 +26,17 @@ function hexToRGBA(hex, opacity) {
     var b = parseInt(hex.substring(4, 6), 16);
     return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 }
-function copy() {
+function copy(icon) {
     var tempInput = document.createElement("input");
     tempInput.value = boxShadow;
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
-    alert("Text copied: " + boxShadow);
+    icon.className = "fa fa-check fa-fade"
+    setTimeout(() => {
+        icon.className = "fa-solid fa-copy"
+    }, 1500);
 }
 
 setBoxShadow()
