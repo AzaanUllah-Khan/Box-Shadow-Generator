@@ -17,6 +17,7 @@ function setBoxShadow(){
     var rgbaColor = hexToRGBA(color, colorOpacity);
     boxShadow = `${horizontal}px ${vertical}px ${blur}px ${spread}px ${rgbaColor} ${inset.checked?"inset":""}`
     box.style.boxShadow = boxShadow
+    document.getElementById("colorcopy").innerText = "box-shadow: "+boxShadow
 }
 function hexToRGBA(hex, opacity) {
     hex = hex.replace('#', '');

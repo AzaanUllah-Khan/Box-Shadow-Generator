@@ -95,12 +95,24 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 main .test{
     width: 250px;
     height: 200px;
     background-color: rgb(65, 145, 225);
     border: 5px solid rgb(36, 80, 224);
+}
+main .copy{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 950px) {
