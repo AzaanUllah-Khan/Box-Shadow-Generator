@@ -26,4 +26,14 @@ function hexToRGBA(hex, opacity) {
     var b = parseInt(hex.substring(4, 6), 16);
     return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 }
+function copy() {
+    var tempInput = document.createElement("input");
+    tempInput.value = boxShadow;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    alert("Text copied: " + boxShadow);
+}
+
 setBoxShadow()
