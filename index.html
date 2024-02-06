@@ -21,7 +21,7 @@
                     <h3 id="horizon">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="0" id="hor" min="-100" max="100" onchange="setBoxShadow()">
+                    <input type="range" value="0" id="hor" min="-100" max="100" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -30,7 +30,7 @@
                     <h3 id="vertic">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="0" id="ver" min="-100" max="100" onchange="setBoxShadow()">
+                    <input type="range" value="0" id="ver" min="-100" max="100" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -39,7 +39,7 @@
                     <h3 id="blur">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10" id="bl" onchange="setBoxShadow()">
+                    <input type="range" value="10" id="bl" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -48,7 +48,7 @@
                     <h3 id="spread">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10" id="spr" onchange="setBoxShadow()">
+                    <input type="range" value="10" id="spr" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="color">
                     <p id="color">rgb(0,0,0)</p>
-                    <input type="color" id="cl" onchange="setBoxShadow()">
+                    <input type="color" id="cl" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -66,14 +66,14 @@
                     <h3 id="opacity">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="100" id="op" onchange="setBoxShadow()">
+                    <input type="range" min="0" max="1" step="0.01" value="1" id="op" oninput="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
                 <div class="div-header">
                     <h1>Inset</h1>
                 </div>
-                <input type="checkbox" id="ins" onchange="setBoxShadow()">
+                <input type="checkbox" id="ins" oninput="setBoxShadow()">
             </div>
         </aside>
         <main>
