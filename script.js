@@ -1,4 +1,5 @@
 var box = document.getElementById("test")
+var boxShadow;
 function setBoxShadow(){
     var horizontal = document.getElementById("hor").value
     var vertical = document.getElementById("ver").value
@@ -12,7 +13,16 @@ function setBoxShadow(){
     document.getElementById("blur").innerText = blur + "px"
     document.getElementById("spread").innerText = spread + "px"
     document.getElementById("color").innerText = color
-    document.getElementById("opacity").innerText = colorOpacity/100
-    box.style.boxShadow = `${horizontal}px ${vertical}px ${blur}px ${spread}px ${color} ${inset.checked?"inset":""}`
+    document.getElementById("opacity").innerText = colorOpacity
+    var rgbaColor = hexToRGBA(color, colorOpacity);
+    boxShadow = `${horizontal}px ${vertical}px ${blur}px ${spread}px ${rgbaColor} ${inset.checked?"inset":""}`
+    box.style.boxShadow = boxShadow
+}
+function hexToRGBA(hex, opacity) {
+    hex = hex.replace('#', '');
+    var r = parseInt(hex.substring(0, 2), 16);
+    var g = parseInt(hex.substring(2, 4), 16);
+    var b = parseInt(hex.substring(4, 6), 16);
+    return `rgba(${r}, ${g}, ${b}, ${opacity})`;
 }
 setBoxShadow()
