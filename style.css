@@ -24,7 +24,7 @@ nav h1{
 aside{
     background-color: white;
     border-top: 3px solid rgb(246, 245, 245);
-    width: 30%;
+    width: 35%;
     height: 92vh;
     overflow-y: auto;
 }
@@ -91,7 +91,7 @@ aside .div .color input{
     border: 1px solid #ccc;
 }
 main{
-    width: 70%;
+    width: 65%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,4 +101,50 @@ main .test{
     height: 200px;
     background-color: rgb(65, 145, 225);
     border: 5px solid rgb(36, 80, 224);
+}
+
+@media screen and (max-width: 950px) {
+    aside{
+        width: 40%;
+    }
+    main{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 750px) {
+    aside{
+        width: 50%;
+    }
+    main{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 650px) {
+    aside{
+        width: 60%;
+    }
+    main{
+        width: 40%;
+    }
+    main .test{
+        width: 160px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 500px) {
+    aside{
+        width: 100%;
+    }
+    main{
+        width: 100%;
+    }
+    main .test{
+        width: 230px;
+        height: 200px;
+        margin-bottom: 45px;
+    }
+    .container{
+        flex-direction: column;
+        gap: 100px;
+    }
 }
