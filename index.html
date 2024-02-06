@@ -18,28 +18,37 @@
             <div class="div">
                 <div class="div-header">
                     <h1>Horizontal Shadow Length</h1>
-                    <h3>10px</h3>
+                    <h3 id="horizon">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10">
+                    <input type="range" value="0" id="hor" min="-100" max="100" onchange="setBoxShadow()">
+                </div>
+            </div>
+            <div class="div">
+                <div class="div-header">
+                    <h1>Vertical Shadow Length</h1>
+                    <h3 id="vertic">10px</h3>
+                </div>
+                <div class="range">
+                    <input type="range" value="0" id="ver" min="-100" max="100" onchange="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
                 <div class="div-header">
                     <h1>Blur Radius</h1>
-                    <h3>10px</h3>
+                    <h3 id="blur">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10">
+                    <input type="range" value="10" id="bl" onchange="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
                 <div class="div-header">
                     <h1>Spread Radius</h1>
-                    <h3>10px</h3>
+                    <h3 id="spread">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10">
+                    <input type="range" value="10" id="spr" onchange="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
@@ -47,30 +56,31 @@
                     <h1>Shadow Color</h1>
                 </div>
                 <div class="color">
-                    <p>rgb(0,0,0)</p>
-                    <input type="color">
+                    <p id="color">rgb(0,0,0)</p>
+                    <input type="color" id="cl" onchange="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
                 <div class="div-header">
                     <h1>Shadow Color Opacity</h1>
-                    <h3>10px</h3>
+                    <h3 id="opacity">10px</h3>
                 </div>
                 <div class="range">
-                    <input type="range" value="10">
+                    <input type="range" value="100" id="op" onchange="setBoxShadow()">
                 </div>
             </div>
             <div class="div">
                 <div class="div-header">
                     <h1>Inset</h1>
                 </div>
-                <input type="checkbox">
+                <input type="checkbox" id="ins" onchange="setBoxShadow()">
             </div>
         </aside>
         <main>
-            <div class="test"></div>
+            <div class="test" id="test"></div>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
